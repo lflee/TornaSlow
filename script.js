@@ -1,5 +1,6 @@
-var x = document.getElementById("sound");
+
 
 function play() {
+    var x = document.getElementById("sound");
     x.play();
 }
