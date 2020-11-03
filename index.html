@@ -10,19 +10,46 @@
 
 </head>
 <body>
-    <button onclick="play(1)">Play</button>
-    <button onclick="play(0.5)">Play 0.5</button>
-    <button onclick="play(0.25)">Play 0.25</button>
-    <p>
+    <div id="frame">
+        <audio id="sound">
+            <!-- sound file from https://www.101soundboards.com/sounds/25534-ryuken-kick -->
+            <source src="ryuken-kick.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+         </audio>
+    
+
+        <button onclick="play(1)">Play</button>
+        <button onclick="play(0.5)">Play 0.5</button>
+        <button onclick="play(0.25)">Play 0.25</button>
+    
+        <div id="romanji">
+            Tatsumakisenpūkyaku
+        </div>
+
+        <div id="furikana">
+            たつまき せんぷう きゃく
+        </div>
+
+        <div id="kanji">
+            竜巻旋風脚
+        </div>
+
+
+
         <span data-text="たつまきれっぷうきゃく" class="word">たつまきれっぷうきゃく</span>
         
+        
+
+
+
         <audio id="sound">
         <!-- sound file from https://www.101soundboards.com/sounds/25534-ryuken-kick -->
         <source src="ryuken-kick.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
         </audio>
+
         
     
-    </p>
+    </div>
 </body>
 </html>
