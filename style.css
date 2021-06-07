@@ -33,3 +33,9 @@ body {
   #frame {
     display: grid;
   }
+
+#info {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
