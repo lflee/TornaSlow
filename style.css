@@ -1,40 +1,67 @@
 body {
-    background: #666;
-  }
-  p {
-    font-weight: bold;
-    font-size: 2em;
-  }
-  
-  .word {
-    position: relative;
-    white-space: nowrap;
-    color: lightblue;
-    text-shadow: 0 0 3px rgba(0,0,0,1); 
-  }
-  
-  .word::after {
-    content: attr(data-text);
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: red;
-    overflow: hidden;
-    width: 40%;
-    animation: run-text 5s infinite linear;
-    text-shadow: 0 0 3px rgba(255,255,255,1); 
-  }
-  
-  @keyframes run-text {
-    from { width: 0 }
-    to { width: 100% }
-  }
+  background-position-y: center;
+  background: black;
+  text-align: center;
+  -webkit-text-stroke-width: 0.01em;
+  -webkit-text-stroke-color: white;
+}
 
-  #frame {
-    display: grid;
-  }
+h1 {
+  background: -webkit-linear-gradient(90deg, yellow, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+div {
+  background: -webkit-linear-gradient(90deg, yellow, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+button {
+  margin: auto;
+  width: 30vh;
+
+  background: -webkit-linear-gradient(90deg, yellow, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.word {
+  position: relative;
+  white-space: nowrap;
+  color: lightblue;
+  text-shadow: 0 0 3px rgba(0,0,0,1); 
+}
+
+.word::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: red;
+  overflow: hidden;
+  width: 40%;
+  animation: run-text 5s infinite linear;
+  text-shadow: 0 0 3px rgba(255,255,255,1); 
+}
+
+@keyframes run-text {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+#frame {
+  display: grid;
+}
 
 #info {
+  background: grey;
   position: fixed;
   bottom: 0;
   right: 0;
